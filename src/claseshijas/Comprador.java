@@ -80,6 +80,11 @@ public class Comprador extends Persona {
     public void setCredito(boolean credito) {
         this.credito = credito;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+ " Comprador{" + "descuento=" + descuento + '}';
+    }
     
     
     

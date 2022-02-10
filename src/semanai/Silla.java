@@ -33,7 +33,7 @@ public class Silla {
         this.descuento = 0.0;// no se ha definido el valor de la caracteristica
         this.impuestoVenta = 0.0;
         this.disponibilidad = false;
-        this.color = "NO se ha definido";
+        this.color = "rojo";  // N   O
     }
     /**
      * Constructor que permite recibir los valores por parametro y asigralo a los atributos
