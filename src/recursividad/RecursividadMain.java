@@ -33,8 +33,8 @@ public class RecursividadMain {
             System.out.println("vector[i]> " + vector[i]);
         }
         System.out.println("Resultado> " + sumador);
-   
-        System.out.println("Suma: "+ sumaVector(vector, vector.length-1));
+
+        System.out.println("Suma: " + sumaVector(vector, vector.length - 1));
         // 
     }
 

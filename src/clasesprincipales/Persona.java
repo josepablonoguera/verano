@@ -42,6 +42,15 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    public Persona(String cedula, String direccion, String nombre, String telefono) {
+        this.cedula = cedula;
+        this.direccion = direccion;
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+
+
+    
     /**
      * @return the cedula
      */
