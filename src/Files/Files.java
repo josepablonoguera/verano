@@ -46,9 +46,9 @@ public class Files {
 
     public static void main(String[] args) {
         //createFile();
-        // writeToFile();
-        readFile();
-        //getInfoFile();
+       // writeToFile();
+       // readFile();
+       getInfoFile();
 //        try {
 //
 //            Files t = new Files(8);
@@ -94,7 +94,7 @@ public class Files {
             File myObj = new File("filename.txt");
             Scanner myReader = new Scanner(myObj);
             System.out.println("\nEstudiantes");
-            while (myReader.hasNextLine()) {
+            while (myReader.hasNextLine()) {               
                 String data = myReader.nextLine();
                 String [] separados = data.split(",");
 
@@ -106,7 +106,7 @@ public class Files {
                 System.out.println("Datos: "+ entrante.toString());
                 System.out.println("");
                 lista.add(entrante);
-                System.out.println(lista.toArray().toString());
+               // System.out.println(lista.toArray().toString());
 
                 //System.out.println(data);
             }
@@ -118,9 +118,9 @@ public class Files {
 
     private static void getInfoFile() {
         System.out.println("\n**** Information ***** \n");
-        try {
-            File myObj = new File("filename.txt");
-            if (myObj.exists()) {
+     
+            File myObj = new File("filenasdme.txt");
+           
                 System.out.println("File name: " + myObj.getName());
                 System.out.println("Absolute path: " + myObj.getAbsolutePath());
                 System.out.println("Writeable: " + myObj.canWrite());
@@ -128,23 +128,18 @@ public class Files {
                 System.out.println("File size in bytes " + myObj.length());
 
                 System.out.println("\n**** EOF ***** \n");
-            } else {
-                System.out.println("The file does not exist.");
-            }
-        } catch (Exception e) {
-        }
+            
     }
 
     private static void deleteFile() {
-        try {
+        
             File myObj = new File("filename.txt");
             if (myObj.delete()) {
                 System.out.println("Deleted the file: " + myObj.getName());
             } else {
                 System.out.println("Failed to delete the file.");
             }
-        } catch (Exception e) {
-        }
+     
     }
 }
 
